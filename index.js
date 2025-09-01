@@ -6,7 +6,6 @@ navLinks.forEach(nav => {
         //remove all of the 'active' class of the navlink
         navLinks.forEach(link => link.classList.remove('active'))
         
-        
         nav.classList.add('active')
         
     })

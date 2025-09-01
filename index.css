@@ -196,3 +196,18 @@ main {
     font-size: 55px;
     padding-top: 41px;
 }
+
+/* sertificate styles */
+
+.sertificate-content {
+    height: 1024px;
+}
+
+.sertificate-content>.divider {
+    position: relative;
+    top: 88px;
+    width: 80%;
+    height: 2px; 
+    margin: auto;
+    background: linear-gradient( 90deg,#DD973C 47%, #691E00 100%);
+}
