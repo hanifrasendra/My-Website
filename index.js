@@ -22,3 +22,4 @@ window.addEventListener('scroll', () => {
         navLinks.classList.remove('scrolled')
     }
 })
+

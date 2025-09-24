@@ -6,7 +6,7 @@
 
 body {
     background-color: #0F1015;
-    width: 100%;
+    width: 1520px;
     height: 100%;
 }
 
@@ -23,7 +23,7 @@ main {
     height: 100px;
     align-items: center;
     justify-content: center;
-    z-index: 1;
+    z-index: 10;
 }
 
 .inner-header {
@@ -48,6 +48,7 @@ main {
 .inner-header.scrolled {
     position: relative;
     top: 0px;
+    background-color: #100B05;
     border: 1px solid #BC7A00;
     border-radius: 20px;
     width: 80%;
@@ -118,51 +119,175 @@ main {
 .introduction {
     width: 100%;
     height: 1024px;
+    background: linear-gradient(315deg, rgba(90, 30, 2, 1)0%, rgba(139, 47, 5, 0.5)16%, rgba(42, 15, 3, 0)56%);
+}
+
+.introduction-layout{
+    display: grid;
+    grid-template-columns: 60% 40%;
 }
 
 .judul {
     padding-left: 140px;
-    padding-top: 294px;
+    padding-top: 401px;
+    width: 100%;
 }
 
-.introduction>.judul>p {
+.introduction>.introduction-layout>.judul>p {
     color: white;
-    font-size: 40px;
-    font-family: MedievalSharp, sans-serif;
+    font-size: 50px;
+    font-family: Public Sans, sans-serif;
+    padding-left: 10px;
 }
 
-.introduction>.judul>.name-intro {
+.introduction>.introduction-layout>.judul>.name-intro {
     color: white;
     font-size: 90px;
-    font-family: Luxurious Roman, sans-serif;
-    font-weight: 300;
-    padding-left: 30px;
+    font-family: Public Sans, sans-serif;
+    font-weight: 700;
 }
 
-.introduction>.judul>.role-intro{
+.introduction>.introduction-layout>.judul>.role-intro{
     color: white;
-    font-size: 70px;
-    font-family: MedievalSharp, sans-serif;
-    font-weight: 400;
+    font-size: 80px;
+    font-family: Public Sans, sans-serif;
+    font-weight: normal;
 }
 
-.gradient-brown {
+.gradient-brown-name {
     background: linear-gradient( 90deg, #F68300, #691E00);
     background-clip: text;
     color: transparent;
+
 }
 
-.about-content {
-    width: 100%;
-    height: 100vh; 
-    background-color: #B5B5B6;
+.gradient-brown-role {
+    background: linear-gradient( 90deg, #F68300, #691E00);
+    background-clip: text;
+    color: transparent;
+    font-weight: 500;
+    font-style: italic;
+
+}
+
+.square-layout {
+    overflow: hidden;
+}
+
+.square {
+    position: relative;
+    top: 326px;
+    left: 100px;
+    width: 736px;
+    height: 406px;
+    border: 15px solid #6A320C; 
+    
+}
+
+.button-layout {
+    display: flex;
+    padding-top: 53px;
+    gap: 28px;
+}
+
+.contact-btn {
+    width: 182px;
+    height: 55px;
+    border-radius: 40px;
+    background-color: #23140D;
+    border: 1px solid #7F4707;
+    color: white;
+    font-family: Public Sans, sans-serif; 
+    font-size: 30px;
+    font-weight: 200;
+    
+}
+
+.sertif-btn {
+    width: 291px;
+    height: 55px;
+    border-radius: 40px;
+    background-color: #000000;
+    border: 1px solid #747474;
+    color: white;
+    font-size: 30px;
+    font-family: Public Sans, sans-serif;
+    font-weight: 200;
+
 }
 
 /* About Me Content Styles */
 
 .about-content {
-    display: flex;
     height: 1024px;
+}
+
+.about-hero {
+    Display: flex;
+    height: 824px;
+    background-color: #866652;
+    overflow: hidden;
+    gap: 120px;
+}
+
+.my-content {
+    width: 793px;
+    padding-left: 65px;
+    padding-top: 84px;
+}
+
+.my-content>h2 {
+    font-family: Playfair Display, sans-serif;
+    font-size: 70px;
+    font-weight: normal;
+    color: #691E00;
+    padding-left: 19px;
+}
+
+.my-content>p {
+    padding-top: 25px;
+    font-family: Public Sans, sans-serif;
+    font-size: 30px;
+}
+
+.my-image {
+    position: relative;
+    width: 572px;
+}
+
+.square-frame {
+    position: absolute;
+}
+
+.horizontal {
+    width: 268px;
+    height: 584px;
+    border: 15px solid #502503;
+    z-index: 2;
+    top: 164px;
+    left: 354px;
+}
+
+.vertical {
+    width: 859px;
+    height: 384px;
+    border: 15px solid #000000;
+    z-index: 1;
+    top: 264px;
+}
+
+.photo {
+    width: 354px;
+    height: 472px;
+    z-index: 3;
+    top: 170px; 
+}
+
+.photo > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .content-wrapper {
@@ -197,17 +322,242 @@ main {
     padding-top: 41px;
 }
 
-/* sertificate styles */
+.more-infobtn {
+    position: relative;
+    width: 392px;
+    height: 73px;
+    background-color: transparent;
+    color: white;
+    font-size: 55px;
+    font-family: Playfair Display, sans-serif;
+    left: 84px;
+    top: 41px;
+} 
 
-.sertificate-content {
+/* project styles */
+
+.my-project {
     height: 1024px;
+    background-color: #03000C;
 }
 
-.sertificate-content>.divider {
-    position: relative;
-    top: 88px;
+.project-content {
+    padding-top: 155px;
+}
+
+.project-content > h2 {
+    color: white;
+    font-family: Public Sans, sans-serif;
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 57px;
+}
+
+.project-content>hr {
     width: 80%;
-    height: 2px; 
     margin: auto;
-    background: linear-gradient( 90deg,#DD973C 47%, #691E00 100%);
+}
+
+.project-content>p {
+    width: 1021px;
+    color: white;
+    font-family: Public Sans, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    margin: auto;
+    padding-top: 155px;
+    padding-bottom: 71px;
+
+}
+
+.project-content>p>.colored-text {
+    color: #F45004;
+}
+
+.project-counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.counter-box {
+    width: 367px;
+    height: 237px;
+    background-color: #1F160F;
+    border: 1px solid #FBBB43;
+    padding: 20px 0 20px 0;
+}
+
+.counter-box>h1 {
+    text-align: center;
+    color: #A2480C;
+    font-family: Public Sans, sans-serif;
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.counter-box>p {
+    text-align: center;
+    color: white;
+    font-family: Public Sans, sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    max-width: 90%;
+    margin: auto;
+}
+
+.counter-box>p>.colored-text {
+    color: #CA8A12;
+}
+
+/* protofolio content */
+.portofolio-content {
+    height: 1024px;
+    background-color: #DDD9D6;
+}
+
+.portofolio-content>h1 {
+    color: #C2A379;
+    font-family: Public Sans, sans-serif;
+    font-size: 150px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 159px;
+    margin-bottom: 10px;
+}
+
+.porto {
+    width: 814px;
+    height: 500px;
+    background-color: #000000;
+    margin-left: 44px;
+}
+
+/* skill styles */
+
+.skill-content {
+    height: 1024px;
+} 
+
+.skill-content>h1 {
+    color: white;
+    font-family: Playfair Display, sans-serif;
+    font-size: 70px;
+    padding: 123px 0 0 207px;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1145px;
+    margin-top: 352px;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.skill-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1145px;
+    margin-top: 352px;
+    justify-content: space-between;
+    
+}
+
+.skill {
+    background-color: #211D1B;
+    border-radius: 15px;
+}
+
+.skill.hovered {
+    width: 251px;
+    height: 234px;
+    border: 3px solid #A15E00;
+}
+
+.skill.after {
+    width: 139px;
+    height: 132px;
+    border: 3px solid #A15E00;
+}
+
+.skill.previous {
+    width: 139px;
+    height: 132px;
+    border: 3px solid #A15E00;
+}
+
+/* Contact Info Style */
+.contact-info {
+    height: 1024px;
+    background-color: #020517;
+}
+
+.contact-info>hr {
+    position: relative;
+    top: 60px;
+    width: 80%;
+    height: 1px;
+    margin: auto;
+    background: linear-gradient(270deg, #AF7E03, #804400);
+    border: none;
+}
+
+.contact-info-layout {
+    padding-top: 162px;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    font-family: Public Sans, sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    gap: 393px;
+}
+
+.contact-info-layout>h2 {
+    color: white;
+}
+
+.item-line {
+    width: 2px;
+    height: 720px;
+    background-color: white;
+}
+
+.orb-line {
+    position: relative;
+}
+
+.orb {
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+}
+
+.orb-1 {
+    position: absolute;
+    top: 20%;
+    left: -9px;
+}
+
+.orb-2 {
+    position: absolute;
+    top: 50%;
+    left: -9px;
+}
+
+.orb-3 {
+    position: absolute;
+    top: 80%;
+    left: -9px;
+}
+
+.item {
+    background-color: #211D1B;
+    border: 1px solid #A15E00;
 }
