@@ -13,15 +13,17 @@
     <header class="header">
         <div class="inner-header">
             <div class="logo-wrapper">
-                <h1>Logo</h1>
+                <a href="#introduction">
+                    <img class="logo" src="my-website/public/Profile_Logo.png" alt=""/>
+                </a>
             </div>
             <nav class="navigator">
                 <ul class="nav-wrapper">
-                    <li class="nav-link">Home</li>
-                    <li class="nav-link">About</li>
-                    <li class="nav-link">Portofolio</li>
-                    <li class="nav-link">Skill</li>
-                    <li class="nav-link">Contact</li>
+                    <li class="nav-link"><a href="#introduction">Home</a></li>
+                    <li class="nav-link"><a href="#about">About</a></li>
+                    <li class="nav-link"><a href="#my-project">Portofolio</a></li>
+                    <li class="nav-link"><a href="#portofolio">Skill</a></li>
+                    <li class="nav-link"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -66,7 +68,7 @@
                 <div class="more-infobtn">for more info</div>
             </div>
         </div>
-        <div class="my-project">
+        <div class="my-project" id="my-project">
             <div class="project-content">
                 <h2>Project</h2>
                 <hr>
@@ -90,7 +92,7 @@
             </div>
             
         </div>
-        <div class="portofolio-content">
+        <div class="portofolio-content" id="portofolio">
             <h1>Portofolio</h1>
             <div class="porto">
 
@@ -110,7 +112,7 @@
             </div>
             
         </div>
-        <div class="contact-info">
+        <div class="contact-info" id="contact">
             <hr>
             <div class="contact-info-layout">
                 <h2>Contact</h2>
@@ -134,13 +136,13 @@
             </div>
         </div>
         <div class="getInTouch">
+            <h1>Get In Touch</h1>
             <div class="inTouchLayout">
                 <form action="">
-                    <input type="text">
-                    <input type="text">
-                    <input type="email">
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <button type="submit">Send</button>
+                    <input type="text" class="first_name">
+                    <input type="text" class="last_name">
+                    <input type="email" class="email">
+                    <textarea name="" id="" cols="30" rows="10" class="message"></textarea>
                 </form>
             </div>
         </div>
