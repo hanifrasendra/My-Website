@@ -560,4 +560,32 @@ main {
 .item {
     background-color: #211D1B;
     border: 1px solid #A15E00;
+    border-radius: 10px;
+    width: 252px;
+    height: 110px;
+}
+
+.item-1 {
+    position: relative;
+    top: 13.5%;
+    left: 60px;
+}
+
+.item-2{
+    position: relative;
+    top: 28.5%;
+    left: -310px;
+}
+
+.item-3 {
+    position: relative;
+    top: 43.5%;
+    left: 60px;
+}
+
+.item>p {
+    display: flex;
+    color: white;
+    justify-content: center;
+    font-size: 30px;
 }
