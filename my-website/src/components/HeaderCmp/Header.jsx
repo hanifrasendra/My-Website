@@ -6,7 +6,7 @@ const Header = () => {
                 <div className={headerStyles.innerHeader}>
                     <div className={headerStyles.logoWrapper}>
                         <a href="#introduction">
-                            <img className={headerStyles.logo} src="./Profile_Logo.png" alt=""/>
+                            <img className={headerStyles.logo} src="/My-Website/Profile_Logo.png" alt=""/>
                         </a>
                     </div>
                     <nav className={headerStyles.navigator}>
