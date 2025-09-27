@@ -15,7 +15,7 @@ const About = () => {
                     <div className={`${aboutStyles.squareFrame} ${aboutStyles.horizontal}`}></div>
                     <div className={`${aboutStyles.squareFrame} ${aboutStyles.vertical}`}></div>
                     <div className={`${aboutStyles.squareFrame} ${aboutStyles.photo}`}>
-                        <img src="public/foto_profil_web-removebg-preview.png" alt=""/>
+                        <img src="./foto_profil_web-removebg-preview.png" alt=""/>
                     </div>
                 </div>
             </div>
