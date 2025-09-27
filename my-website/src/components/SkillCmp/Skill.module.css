@@ -1,0 +1,55 @@
+/* skill styles */
+
+.skillContent {
+    height: 1024px;
+} 
+
+.skillContent>h1 {
+    color: white;
+    font-family: Playfair Display, sans-serif;
+    font-size: 70px;
+    padding: 123px 0 0 207px;
+}
+
+.skillContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1145px;
+    margin-top: 352px;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.skillBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1145px;
+    margin-top: 352px;
+    justify-content: space-between;
+    
+}
+
+.skill {
+    background-color: #211D1B;
+    border-radius: 15px;
+}
+
+.skill.hovered {
+    width: 251px;
+    height: 234px;
+    border: 3px solid #A15E00;
+}
+
+.skill.after {
+    width: 139px;
+    height: 132px;
+    border: 3px solid #A15E00;
+}
+
+.skill.previous {
+    width: 139px;
+    height: 132px;
+    border: 3px solid #A15E00;
+}

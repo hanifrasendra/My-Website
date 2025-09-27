@@ -1,0 +1,119 @@
+/* About Me Content Styles */
+
+.aboutContent {
+    height: 1024px;
+}
+
+.aboutHero {
+    Display: flex;
+    height: 824px;
+    background-color: #866652;
+    overflow: hidden;
+    gap: 120px;
+}
+
+.myContent {
+    width: 793px;
+    padding-left: 65px;
+    padding-top: 84px;
+}
+
+.myContent>h2 {
+    font-family: Playfair Display, sans-serif;
+    font-size: 70px;
+    font-weight: normal;
+    color: #691E00;
+    padding-left: 19px;
+    margin: 0;
+}
+
+.myContent>p {
+    padding-top: 25px;
+    font-family: Public Sans, sans-serif;
+    font-size: 30px;
+    color: black;
+}
+
+.myImage {
+    position: relative;
+    width: 572px;
+}
+
+.squareFrame {
+    position: absolute;
+}
+
+.horizontal {
+    width: 268px;
+    height: 584px;
+    border: 15px solid #502503;
+    z-index: 2;
+    top: 164px;
+    left: 354px;
+}
+
+.vertical {
+    width: 859px;
+    height: 384px;
+    border: 15px solid #000000;
+    z-index: 1;
+    top: 264px;
+}
+
+.photo {
+    width: 354px;
+    height: 472px;
+    z-index: 3;
+    top: 170px; 
+}
+
+.photo > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.contentWrapper {
+    height: 824px; 
+}
+
+.judul-2 {
+    padding: 105px 0 0 105px;
+    color: #691E00;
+    font-size: 70px;
+    font-family: Luxurious Roman, sans-serif;
+    font-weight: 300;
+}
+
+.aboutContent>.contentWrapper>p {
+    width: 667px;
+    font-family: MedievalSharp, sans-serif;
+    padding-left: 105px;
+    font-size: 30px;
+}
+
+.sertificationNavigator {
+    height: 200px;
+}
+
+.sertificationNavigator>p{
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    font-family: Luxurious Roman, sans-serif;
+    font-size: 55px;
+    padding-top: 41px;
+}
+
+.moreInfoBtn {
+    position: relative;
+    width: 392px;
+    height: 73px;
+    background-color: transparent;
+    color: white;
+    font-size: 55px;
+    font-family: Playfair Display, sans-serif;
+    left: 84px;
+    top: 41px;
+} 
