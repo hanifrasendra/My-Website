@@ -3,12 +3,12 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import HomePage from './pages/HomePage.jsx'
-import Header from './components/HeaderCmp/Header.jsx'
+import Navigator from './components/NavigatorCmp/Navigator.jsx'
 
 function App() {
   return (
     <div>
-      <Header/>
+      <Navigator/>
       <HomePage/>
     </div>
     

@@ -5,11 +5,13 @@ import Porto from '../components/PortoCmp/Porto.jsx'
 import Skill from '../components/SkillCmp/Skill.jsx'
 import Contact from '../components/ContactCmp/Contact.jsx'
 import InTouch from '../components/InTouchCmp/InTouch.jsx'
-import homeStyles from './HomePage.module.css'
+import Header from '../components/HeaderCmp/Header.jsx'
+
 
 const HomePage = () => {
     return(
-        <div className={homeStyles.homePage}>
+        <div className={``}>
+            <Header/>
             <Introduction/>
             <About/>
             <Project/>

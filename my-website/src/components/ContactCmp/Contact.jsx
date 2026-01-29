@@ -1,23 +1,23 @@
-import contactStyles from './Contact.module.css'
+
 
 const Contact = () => {
     return(
-        <div className={contactStyles.contactInfo} id="contact">
+        <div className={``} id="contact">
             <hr/>
-            <div className={contactStyles.contactInfoLayout}>
+            <div className={``}>
                 <h2>Contact</h2>
-                <div className={contactStyles.orbLine}>
-                    <div className={contactStyles.itemLine}>
-                        <div className={`${contactStyles.orb} ${contactStyles.orb1}`}></div>
-                        <div className={`${contactStyles.orb} ${contactStyles.orb2}`}></div>
-                        <div className={`${contactStyles.orb} ${contactStyles.orb3}`}></div>
-                        <div className={`${contactStyles.item} ${contactStyles.item1}`}>
+                <div className={``}>
+                    <div className={``}>
+                        <div className={``}></div>
+                        <div className={``}></div>
+                        <div className={``}></div>
+                        <div className={``}>
                             <p>Github</p>
                         </div>
-                        <div className={`${contactStyles.item} ${contactStyles.item2}`}>
+                        <div className={``}>
                             <p>Whatsapp</p>
                         </div>
-                        <div className={`${contactStyles.item} ${contactStyles.item3}`}>
+                        <div className={``}>
                             <p>Instagram</p>
                         </div>
                     </div>

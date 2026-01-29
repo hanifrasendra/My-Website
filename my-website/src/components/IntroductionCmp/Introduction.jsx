@@ -1,21 +1,20 @@
-import introductionStyles from './Introduction.module.css'
 
 const Introduction = () => {
     return(
-        <div className={introductionStyles.introduction} id="introduction">
-            <div className={introductionStyles.introductionLayout}>
-                <div className={introductionStyles.judul}>
+        <div className={``} id="introduction">
+            <div className={``}>
+                <div className={``}>
                     <p>Hello!, I am </p>
-                    <h1 className={introductionStyles.nameIntro}><span className={introductionStyles.gradientBrownName}>Hanif Rasendra</span></h1> 
+                    <h1 className={``}><span className={``}>Hanif Rasendra</span></h1> 
                     <br/> 
-                    <h1 className={introductionStyles.roleIntro}>A <span className={introductionStyles.gradientBrownRole}>Front-End Dev</span></h1>
-                    <div className={introductionStyles.buttonLayout}>
-                        <button className={introductionStyles.contactBtn}>Contact </button>
-                        <button className={introductionStyles.sertifBtn}>Sertificate</button>
+                    <h1 className={``}>A <span className={``}>Front-End Dev</span></h1>
+                    <div className={``}>
+                        <button className={``}>Contact </button>
+                        <button className={``}>Sertificate</button>
                     </div>
                 </div>
-                <div className={introductionStyles.squareLayout}>
-                    <div className={introductionStyles.square}>
+                <div className={``}>
+                    <div className={``}>
                     </div>
                 </div>        
             </div>

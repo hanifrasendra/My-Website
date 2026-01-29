@@ -1,53 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Luxurious+Roman&family=MedievalSharp&family=Prompt&family=Playfair+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 
 :root {
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
+  font-family: 'Playfair Display', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-p {
-  margin: 0;
-}
-
 body {
   background-color: #0F1015;
-  margin: 0;
-  height: 100%;
 }
 
-
-
-
-
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+  51%, 100% {
+    opacity: 0;
   }
 }
+
+
+
+
+

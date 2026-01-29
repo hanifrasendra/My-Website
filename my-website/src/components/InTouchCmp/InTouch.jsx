@@ -1,15 +1,15 @@
-import intouchstyles from './InTouch.module.css'
+
  
 const InTouch = () => {
     return(
-        <div className={intouchstyles.getInTouch}>
+        <div className={``}>
             <h1>Get In Touch</h1>
-            <div className={intouchstyles.inTouchLayout}>
+            <div className={``}>
                 <form action="">
-                    <input type="text" className={intouchstyles.firstName}/>
-                    <input type="text" className={intouchstyles.lastName}/>
-                    <input type="email" className={intouchstyles.email}/>
-                    <textarea name="" id="" cols="30" rows="10" className={intouchstyles.message}></textarea>
+                    <input type="text" className={``}/>
+                    <input type="text" className={``}/>
+                    <input type="email" className={``}/>
+                    <textarea name="" id="" cols="30" rows="10" className={``}></textarea>
                 </form>
             </div>
         </div>
