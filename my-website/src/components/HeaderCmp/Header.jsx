@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react';
-
+import * as fa6Icons from 'react-icons/fa6';
 
 const Header = () => {
     const [typedWrite, setTypedWrite] = useState('');
@@ -28,14 +28,14 @@ const Header = () => {
                             <span className={`text-[rgba(188,122,0,1)] italic animate-[blink_1s_infinite]`}>|</span>
                         </span>
                     </h1>
-                    <div className={`flex gap-[30px]`}>
-                        <button className={`bg-[rgba(66,43,0,1)] w-[182px] border border-[rgba(188,122,0,1)] rounded-[40px] `}>
-                            <p className={`text-[32px] text-[rgba(255,255,255,1)] font-light`}>Contact</p>
-                            <div></div>
+                    <div className={`flex items-center gap-[30px] h-[87px]`}>
+                        <button className={`flex justify-between bg-[rgba(66,43,0,1)] w-[182px] border border-[rgba(188,122,0,1)] rounded-[40px] h-[55px] px-[20px] hover:scale-[1.03] transition-all ease-in-out duration-4s`}>
+                            <p className={`text-[32px] text-[rgba(255,255,255,1)] font-light font-[Open_sans]`}>Contact</p>
+                            <div className={`flex items-center`}><fa6Icons.FaArrowDown className={`text-[20px] text-[rgba(200,146,46,1)]`}/></div>
                         </button>
-                        <button className={`bg-[rgba(0,0,0,1)] w-[291px] border border-[rgba(108,108,108,1)] rounded-[40px]`}>
-                            <p className={`text-[32px] text-[rgba(255,255,255,1)] font-light`}>Sertification</p>
-                            <div></div>
+                        <button className={`flex justify-between bg-[rgba(0,0,0,1)] w-[291px] border border-[rgba(108,108,108,1)] rounded-[40px] h-[55px] hover:scale-[1.03] transition-all ease-in-out duration-4s px-[20px]`}>
+                            <p className={`text-[32px] text-[rgba(255,255,255,1)] font-light font-[Open_sans]`}>Sertification</p>
+                            <div className={`flex items-center`}><fa6Icons.FaArrowRightLong className={`w-[40px] h-[40px] text-[rgba(255,255,255,1)] font-light`}/></div>
                         </button>
                     </div>
                 </div>

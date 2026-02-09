@@ -1,6 +1,30 @@
-
+import { useState, useEffect } from 'react';
+import * as mdIcons from 'react-icons/md';
 
 const Project = () => {
+
+    const Counter = ({end, duration = 1600}) => {
+        const [count, setCount] = useState(0);
+
+        useEffect(() => {
+            let start = 0;
+            const incrementTimer = duration / end;
+
+            const timer = setInterval(() => {
+                start++
+                setCount(start);
+                if(start === end) {
+                    clearInterval(timer);
+                }
+            }, incrementTimer); 
+
+            return () => clearInterval(timer)
+        }, [end, duration]); 
+
+        return <>{count}</>
+    }
+
+
     return(
         <div className={``} id="my-project">
             <div className={`mt-[37px]`}>
@@ -22,28 +46,38 @@ const Project = () => {
                                 <div className={`flex gap-[60px] h-[180px]`}>
                                     <div className={`bg-[rgba(85,55,0,1)] h-full w-[1px]`}></div>
                                     <div className={`w-[357px]`}>
-                                        <p className={`text-[90px] text-[rgba(162,72,12,1)] font-['Open_sans'] font-semibold`}>10+</p>
+                                        <p className={`text-[90px] text-[rgba(162,72,12,1)] font-['Open_sans'] font-semibold`}>
+                                            <Counter end={10} />+
+                                        </p>
                                         <p className={`text-[rgba(248,242,230,1)] text-[32px] font-[Open_sans] font-semibold`}><span className={`text-[rgba(200,146,46,1)] font-[Playfair_display]`}>web</span> development</p>
                                     </div>
                                     <div className={`bg-[rgba(85,55,0,1)] h-full w-[1px]`}></div>
                                     <div className={`w-[357px]`}>
-                                        <p className={`text-[90px] text-[rgba(162,72,12,1)] font-['Open_sans'] font-semibold`}>15+</p>
+                                        <p className={`text-[90px] text-[rgba(162,72,12,1)] font-['Open_sans'] font-semibold`}>
+                                            <Counter end={15} />+
+                                        </p>
                                         <p className={`text-[rgba(248,242,230,1)] text-[32px] font-[Open_sans] font-semibold`}><span className={`text-[rgba(200,146,46,1)] font-[Playfair_display]`}>Desktop</span> development</p>
                                     </div>
                                     <div className={`bg-[rgba(85,55,0,1)] h-full w-[1px]`}></div>
                                     <div className={`w-[357px]`}>
-                                        <p className={`text-[90px] text-[rgba(162,72,12,1)] font-['Open_sans'] font-semibold`}>12+</p>
+                                        <p className={`text-[90px] text-[rgba(162,72,12,1)] font-['Open_sans'] font-semibold`}>
+                                            <Counter end={12} />+   
+                                        </p>
                                         <p className={`text-[rgba(248,242,230,1)] text-[32px] font-[Open_sans] font-semibold`}><span className={`text-[rgba(200,146,46,1)] font-[Playfair_display]`}>Highschool</span> development</p>
                                     </div>
                                     <div className={`bg-[rgba(85,55,0,1)] h-full w-[1px]`}></div>
                                 </div>
                                 <div className={`gap-[30px] flex`}>
-                                    <button className={`bg-[rgba(85,55,0,1)] border-3 border-[rgba(160,104,0,1)] text-[32px] text-[rgba(239,223,194,1)] w-[193px] h-[66px]`}>Explore</button>
-                                    <button className={`bg-transparent text-[32px] text-[rgba(108,108,108,1)] w-[151px]`}>Insight</button>
+                                    <button className={`bg-[rgba(85,55,0,1)] border-3 border-[rgba(160,104,0,1)] text-[32px] text-[rgba(239,223,194,1)] w-[193px] h-[66px] transition-all ease-in-out duration-10s hover:scale-[1.05] cursor-pointer`}>Explore</button>
+                                    <button className={`bg-transparent text-[32px] text-[rgba(108,108,108,1)] w-[151px] flex items-center transition-all ease-in-out duration-10s group hover:scale-[1.05] cursor-pointer`}>Insight 
+                                        <div className={`w-[35px] h-[35px] overflow-hidden`}>
+                                            <mdIcons.MdOutlineKeyboardArrowRight className={`text-[40px]`}/>
+                                        </div>
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> 
                     
                 </div>
             </div>

@@ -24,11 +24,16 @@ const About = () => {
                     <div className={``}>
                         <div className={`flex flex-col gap-[56px] mb-[112px]`}>
                             <p className={`w-[836px] text-[32px]`}>
-                                Saya, Hanif Rasendra Putra, seorang mahasiswa yang penuh semangat dan tengah menempuh studi di Universitas Pembangunan Nasional "Veteran" Jawa Timur (UPN Jatim). Saya sedang mendalami dunia teknologi informasi dengan fokus utama pada Web Development.
+                                Saya, Hanif Rasendra Putra, seorang mahasiswa yang penuh semangat dan tengah menempuh studi di Universitas Pembangunan Nasional "Veteran" Jawa Timur (UPN Jatim). Saya sedang mendalami dunia teknologi informasi dengan fokus utama pada Web Development.
                             </p>
                             <div className={`flex gap-[80px]`}>
-                                <button className={`w-[230px] border-3 border-[rgba(133,87,0,1)] text-[32px]`}>Learn More</button>
-                                <button className={`w-[166px] bg-[rgba(217,217,217,1)] text-[32px] text-[rgba(108,108,108,1)]`}>Reaserch</button>
+                                <button className={`w-[230px] border-3 border-[rgba(133,87,0,1)] text-[32px] transition-all ease-in-out duration-4s hover:scale-[1.03] cursor-pointer`}>Learn More</button>
+                                <button className={`w-[166px] bg-[rgba(217,217,217,1)] flex flex-col cursor-pointer transition-all ease-in-out duration-4s hover:scale-[1.03]`}>
+                                    <p className={`text-[rgba(108,108,108,1)] text-[32px] h-[45px]`}>Reaserch</p>
+                                    <div className={`bg-[rgba(108,108,108,1)] border-none h-[2px] w-[80%] mx-auto`}>
+
+                                    </div>
+                                </button>
                             </div>
                         </div>
                     </div>
