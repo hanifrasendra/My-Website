@@ -1,7 +1,34 @@
 import * as faIcons from 'react-icons/fa'
+import {useState, useEffect, useRef} from 'react';
 
 const Contact = () => {
+    const [isVisible, setIsVisible] = useState(false);
+    const sectionRef = useRef(null);
 
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setIsVisible(true);
+                    } else {
+                        setIsVisible(false);
+                    }
+                })
+            },
+            {
+            threshold: 0.3  // ← Trigger saat 30% section terlihat
+            }
+        );
+        if (sectionRef.current) {
+            observer.observe(sectionRef.current);
+        }
+
+    }, [])
+
+    
+
+   
     const info = [
         {
             icon: faIcons.FaGithub,
@@ -24,10 +51,16 @@ const Contact = () => {
     ]
 
     return(
-        <div className={`bg-[rgba(66,43,0,1)]`} id="contact">
+        <div 
+        ref={sectionRef}
+        className={`bg-[rgba(66,43,0,1)]`} id="contact">
             <div className={`pt-[244px]`}>
-                <h1 className={`text-[rgba(255,255,255,1)] text-[50px] font-semibold mx-[100px] w-[546px]`}>Look Forward Working With You </h1>
-                <hr className={`bg-[linear-gradient(rgba(128,68,0,1),rgba(175,126,3,1))] w-[35%] h-[2px] border-none mt-[20px] mx-[100px]`}/>
+                <h1 className={`text-[rgba(255,255,255,1)] text-[50px] font-semibold mx-[100px] w-[546px]
+                       
+                `}>Look Forward Working With You </h1>
+                <hr className={`bg-[linear-gradient(rgba(128,68,0,1),rgba(175,126,3,1))] w-[0px] h-[2px] border-none mt-[20px] mx-[100px] transition-all ease-in-out duration-1000
+                    ${isVisible ? 'w-[35%]':''}     
+                `}/>
                 <div className={`mt-[189px] pb-[265px] mx-[100px]`}>
                     <div className={`flex justify-between`}>
                         {info.map((info) => (

@@ -1,12 +1,33 @@
-import { useState, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import * as mdIcons from 'react-icons/md';
 
 const Project = () => {
+    const [isVisible, setIsVisible] = useState(false);
+    const sectionRef = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if(entry.isIntersecting) {
+                    setIsVisible(true);
+                } else {
+                    setIsVisible(false);
+                }
+            },
+            {
+                threshold: 0.3
+            }
+        )
+        if(sectionRef.current) {
+            observer.observe(sectionRef.current);
+        }
+    })
 
     const Counter = ({end, duration = 1600}) => {
         const [count, setCount] = useState(0);
 
         useEffect(() => {
+            if(!isVisible) return;
             let start = 0;
             const incrementTimer = duration / end;
 
@@ -19,14 +40,16 @@ const Project = () => {
             }, incrementTimer); 
 
             return () => clearInterval(timer)
-        }, [end, duration]); 
+        }, [isVisible, end, duration]); 
 
         return <>{count}</>
     }
 
 
     return(
-        <div className={``} id="my-project">
+        <div 
+        ref={sectionRef}
+        className={``} id="my-project">
             <div className={`mt-[37px]`}>
                 <div className={`flex flex-col items-center gap-[20px] mb-[16px] mx-[100px]`}>
                     <h2 className={`text-[32px] text-[rgba(255,255,255,1)]`}>Project</h2>
